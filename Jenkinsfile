@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/YOUR-USERNAME/ExpenseTrackerGUI.git'
+                git 'https://github.com/Afrinriswana12/StudentManagementSystem.git'
             }
         }
 
