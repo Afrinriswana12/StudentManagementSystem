@@ -1,10 +1,18 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven'
+        jdk 'JDK'
+    }
+
     stages {
+
         stage('Clone') {
             steps {
-                git 'https://github.com/Afrinriswana12/StudentManagementSystem.git'
+                git branch: 'main',
+                credentialsId: 'github',
+                url: 'https://github.com/Afrinriswana12/StudentManagementSystem.git'
             }
         }
 
